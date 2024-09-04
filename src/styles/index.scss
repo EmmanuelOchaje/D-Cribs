@@ -49,6 +49,12 @@ $bgColor: rgb(0, 125, 0);
         margin-left: 3.5rem;
         font-size: 0.8rem;
       }
+      .err {
+        font-size: 0.7rem;
+        font-weight: bold;
+        margin-left: 4.5rem;
+        color: $bgColor;
+      }
       .inp {
         width: 70%;
         margin-left: 4rem;
