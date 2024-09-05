@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Swal from "sweetalert2";
+// import SignUp from "../pages/SignUp";
+import { Link } from "react-router-dom";
 
 const Form = () => {
   const [email, setEmail] = useState("");
@@ -40,6 +42,7 @@ const Form = () => {
             className="inp"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
           />
           <br />
           {para ? <p className="err">Enter Email</p> : null}
@@ -50,6 +53,7 @@ const Form = () => {
             className="inp"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            required
           />
           <br />
           {para ? <p className="err">Enter Password</p> : null}
@@ -59,7 +63,10 @@ const Form = () => {
             Sign In
           </button>
           <p className="dnt">
-            Don&apos;t have an account? <span>Sign Up</span>
+            Don&apos;t have an account?{" "}
+            <span>
+              <Link to="/signup">Sign Up</Link>
+            </span>
           </p>
         </form>
       </div>

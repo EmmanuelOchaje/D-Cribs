@@ -13,7 +13,7 @@ $bgColor: rgb(0, 125, 0);
   font-size: 1.2rem;
   z-index: 1;
 }
-.container {
+.signin {
   display: flex;
   height: 95.5vh;
   padding-block: 1vw;
@@ -54,6 +54,7 @@ $bgColor: rgb(0, 125, 0);
         font-weight: bold;
         margin-left: 4.5rem;
         color: $bgColor;
+        margin-top: 0;
       }
       .inp {
         width: 70%;
@@ -97,9 +98,13 @@ $bgColor: rgb(0, 125, 0);
       span {
         color: $bgColor;
         font-weight: bold;
-        &:hover {
-          color: rgb(235, 0, 0);
-          cursor: pointer;
+        a {
+          color: $bgColor;
+          text-decoration: none;
+          &:hover {
+            color: rgb(235, 0, 0);
+            cursor: pointer;
+          }
         }
       }
     }
@@ -120,3 +125,5 @@ $bgColor: rgb(0, 125, 0);
     }
   }
 }
+
+@import "./signup.scss";
