@@ -22,6 +22,15 @@ const SignUpForm = () => {
       confirm: "",
     }); */
     console.log(value);
+    /*  Swal.fire({
+      title: "Welcome!",
+      text: "Continue To Dashboard",
+      icon: "success",
+      iconColor: "rgb(54, 52, 52)",
+      confirmButtonColor: "rgb(54, 52, 52)",
+    }); */
+  }
+  function reset() {
     Swal.fire({
       title: "Welcome!",
       text: "Continue To Dashboard",
@@ -29,8 +38,6 @@ const SignUpForm = () => {
       iconColor: "rgb(54, 52, 52)",
       confirmButtonColor: "rgb(54, 52, 52)",
     });
-  }
-  function reset() {
     setValue({
       firstname: "",
       lastname: "",
