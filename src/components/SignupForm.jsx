@@ -14,24 +14,24 @@ const SignUpForm = () => {
   }
   function handleSubmit(e) {
     e.preventDefault();
-    /* setValue({
+    setValue({
       firstname: "",
       lastname: "",
       email: "",
-      passord: "",
+      password: "",
       confirm: "",
-    }); */
+    });
     console.log(value);
-    /*  Swal.fire({
+    Swal.fire({
       title: "Welcome!",
       text: "Continue To Dashboard",
       icon: "success",
       iconColor: "rgb(54, 52, 52)",
       confirmButtonColor: "rgb(54, 52, 52)",
-    }); */
+    });
   }
   function reset() {
-    Swal.fire({
+    /*   Swal.fire({
       title: "Welcome!",
       text: "Continue To Dashboard",
       icon: "success",
@@ -44,7 +44,7 @@ const SignUpForm = () => {
       email: "",
       password: "",
       confirm: "",
-    });
+    }); */
   }
   return (
     <div className="form">
