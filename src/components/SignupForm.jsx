@@ -30,22 +30,7 @@ const SignUpForm = () => {
       confirmButtonColor: "rgb(54, 52, 52)",
     });
   }
-  function reset() {
-    /*   Swal.fire({
-      title: "Welcome!",
-      text: "Continue To Dashboard",
-      icon: "success",
-      iconColor: "rgb(54, 52, 52)",
-      confirmButtonColor: "rgb(54, 52, 52)",
-    });
-    setValue({
-      firstname: "",
-      lastname: "",
-      email: "",
-      password: "",
-      confirm: "",
-    }); */
-  }
+
   return (
     <div className="form">
       <h2 className="header">D-cribs.</h2>
@@ -100,9 +85,7 @@ const SignUpForm = () => {
             required
             value={value.confirm}
           />
-          <button className="btn" onClick={reset}>
-            Sign Up
-          </button>
+          <button className="btn">Sign Up</button>
         </form>
       </div>
     </div>
