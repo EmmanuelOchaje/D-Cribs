@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const SignUpImages = () => {
   const imagesArr = [
     {
@@ -15,7 +17,9 @@ const SignUpImages = () => {
   ];
   return (
     <div className="images">
-      <h2 className="header">D-Cribs.</h2>
+      <h2 className="header">
+        <Link to="/">D-Cribs.</Link>
+      </h2>
       <img src={imagesArr[2].src} className="image" />
     </div>
   );

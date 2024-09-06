@@ -30,7 +30,9 @@ const Form = () => {
 
   return (
     <div className="form">
-      <h2 className="header">D-Cribs.</h2>
+      <h2 className="header">
+        <Link to="/">D-Cribs.</Link>
+      </h2>
       <div className="cont">
         <h1>Hi, there!</h1>
         <p className="welcome">Welcome back, Sign In.</p>

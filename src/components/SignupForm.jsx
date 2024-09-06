@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 const SignUpForm = () => {
   const [value, setValue] = useState({
@@ -33,7 +34,9 @@ const SignUpForm = () => {
 
   return (
     <div className="form">
-      <h2 className="header">D-Cribs.</h2>
+      <h2 className="header">
+        <Link to="/">D-Cribs.</Link>
+      </h2>
       <div className="cont">
         <h1>Create Account</h1>
         <form onSubmit={handleSubmit}>
