@@ -5,7 +5,7 @@ const SignUpForm = () => {
     firstname: "",
     lastname: "",
     email: "",
-    passord: "",
+    password: "",
     confirm: "",
   });
 
